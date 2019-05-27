@@ -5,4 +5,4 @@ phonebook = {"편의점":'11-111', "순남시래기":"222-222", "시골집":'224
 
 choice = random.choice(menu)
 print(f'오늘의 점심은 {choice}입니다.') # 랜덤한 식당
-print(f'번호는 {phonebook[choice]}입니다.') # 랜덤한 식당의 전화번호
+print(f'번호는 {phonebook[choice]}입니다.') # 랜덤한 식당의 전화번호q
