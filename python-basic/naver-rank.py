@@ -12,4 +12,4 @@ results = soup.find_all('span',class_='ah_k')
 index = 0
 for result in results:
   index = index +1
-  print(index, result.text)
+  print (index, result.text)
