@@ -9,7 +9,8 @@ url = 'http://www.naver.com'
 response = requests.get(url).text
 soup = bs4.BeautifulSoup(response, 'html.parser')
 results = soup.find_all('span',class_='ah_k')
+results2 = soup.select('.ah_roll_area.PM_CL_realtimeKeyword_rolling .ah_k')  # 완벽하게 20개만 가져올 수 있음/ div 태그 안에 class 
 index = 0
 for result in results:
   index = index +1
-  print (index, result.text)
+  print(index, result.text)
